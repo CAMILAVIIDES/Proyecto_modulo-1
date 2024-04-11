@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  body {
+    padding: 0px;
+    margin: 0 auto;
+  }
+  
+}
+
+
+#header {
+  justify-content: space-between;
+  display: flex;
+  background-color: #255538;
+  align-items: center;
+  height: 50px;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin: 20px;
+
+}
+#BitCook {
+  color: white;
+  font-family:"DM Serif Display", serif;
+}
+#Sendyourecipe{
+  color: white;
+  font-family:"DM Sans", sans-serif ;
+}
+
+.imagen-1 {
+  background-image: url(../imagenes/imagen\ principal.webp);
+  margin: 40px;
+  align-items: center;
+  color: white;
+  align-content: center;
+  height: 368px;
+  font-size: 20px;
+  background-size: cover;
+  background-position-y: center;
+  margin: 28px auto;
+ }
+ main h2, main h3{
+  font-family:"DM Serif Display", serif  ; 
+ }
+ main ul, li{
+  font-family: "DM Sans", sans-serif;
+  color: black;
+ }
+ main div img{
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.recetas{
+  background-color: white;
+ 
+}
+
+#main{
+  margin: 0 auto;
+  max-width: 1239px;
+  display: grid;
+ grid-gap: 10px;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows:fit-content fit-content ;
+ align-content: center;
+ grid-template-areas:
+ "receta-1 receta-2 receta-3"
+ "receta-4 receta-5 receta-6"
+ ;
+
+
+}
+
+img
+#receta-1{
+  grid-area: receta-1;
+}
+#receta-2{
+  grid-area: receta-2;
+}
+#receta-3{
+  grid-area: receta-3;
+}
+#receta-4{
+  grid-area: receta-4;
+}
+#receta-5{
+  grid-area: receta-5;
+}
+#receta-6{
+  grid-area: receta-6;
+}
+
+#footer {
+  justify-content: center;
+  background-color: #255538;
+  color: #ddd;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  top: 20px;
+  left: 20px;
+  border-radius: 6px;
+  flex-flow: row wrap;
+  padding-left: 70px;
+  padding-right: 70px;
+  align-self: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin: 20px;
+}
+#Bitcook-2{
+  font-family: "DM Serif Display", serif;
+}
+.año{
+font-family:"DM Sans", sans-serif ;
+}
+
+/* #main{
+  display: flex;
+  min-width: 560px;
+  max-width: 1440px;
+  padding: 20px;
+  margin-bottom: 0px;
+  flex-flow: column;
+} */
+body{
+  background-color: #EFE2C2 ;
+}
+@media(max-width:768px){
+  main {
+    
+        display: grid;
+margin: 0 auto;
+max-width: 1239px;
+grid-template-columns: 1fr 1fr ;
+grid-template-rows:  440px 440px 440px;
+grid-template-areas: 
+
+"receta-1 receta-2"
+"receta-3 receta-4"
+"receta-5 receta-6";
+gap: 20px;
+    }
+}
+#receta-1{
+  grid-area: receta-1;
+}
+#receta-2{
+  grid-area: receta-2;
+}
+#receta-3{
+  grid-area: receta-3;
+}
+#receta-4{
+  grid-area: receta-4;
+}
+#receta-5{
+  grid-area: receta-5;
+}
+#receta-6{
+  grid-area: receta-6;
+
+}
+

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  body {
+    padding: 20px;
+  }
+  
+}
+
+#header {
+    justify-content: space-between;
+    display: flex;
+    background-color: #255538;
+    align-items: center;
+    height: 50px;
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#BitCook {
+    color: white;
+    font-family: "DM Serif Display", serif;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    font-family:  "DM Sans", sans-serif;
+   
+    
+  }
+
+  .content{
+    color: #7E4333;
+    font-family: "DM Serif Display", serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54.84px;
+    text-align: left;
+    margin: o auto;
+    padding: 20px;
+  }
+  p{
+    font-family:"DM Sans", sans-serif ;
+  }
+  ol {
+    color: black;
+    margin: 2 auto;
+    font-family:"DM Sans", sans-serif ;
+  }
+  .container
+  {
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+  }
+.item-imagen{
+  background-image: url(../imagenes/imagen-proyecto.png);
+  align-items: center;
+  align-content: center;
+  height: 368px;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  background-size: cover;
+  background-position-y: center;
+  margin: 28px auto;   
+  object-fit: contain;
+}
+li{
+  font-family:"DM Sans", sans-serif  ; ;
+}
+
+.tabla{
+ justify-content: space-between;
+ padding: 20px 25px;
+ font-family:"DM Sans", sans-serif  ;
+ width: 100%;
+  border: 1px #7E4333;
+}
+#macros{
+font-family: "DM Sans", sans-serif ;
+font: 1em sans-serif;
+}
+#Morerecipes{
+  color: #7E4333;
+
+}
+
+.contenedor {
+  width: 400px;
+  height: 37px; 
+  margin: 0 auto; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content:space-around;
+  
+}
+
+
+#footer {
+  justify-content: center;
+  background-color: #255538;
+  color: #ddd;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  flex-wrap: wrap;
+  top: 20px;
+  left: 20px;
+  border-radius: 6px;
+  flex-flow: row wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-self: center;
+  margin: 10px ;
+  justify-content: space-between;
+}
+#Bitcook-2{
+  font-family: "DM Serif Display", serif;
+}
+.año{
+font-family:"DM Sans", sans-serif ;
+}
+
+
+
