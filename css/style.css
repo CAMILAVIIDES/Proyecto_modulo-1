@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
-  body {
-    padding: 0px;
-    margin: 0 auto;
-  }
-  
+ }
+body{
+    padding: 0 px;
+ margin: 0 auto;
 }
-
-
 #header {
   justify-content: space-between;
   display: flex;
@@ -21,15 +18,14 @@
   padding-left: 20px;
   padding-right: 15px;
   margin: 20px;
-
 }
 #BitCook {
   color: white;
-  font-family:"DM Serif Display", serif;
+  font-family: "DM Serif Display", serif;
 }
-#Sendyourecipe{
+#Sendyourecipe {
   color: white;
-  font-family:"DM Sans", sans-serif ;
+  font-family: "DM Sans", sans-serif;
 }
 
 .imagen-1 {
@@ -43,59 +39,57 @@
   background-size: cover;
   background-position-y: center;
   margin: 28px auto;
- }
- main h2, main h3{
-  font-family:"DM Serif Display", serif  ; 
- }
- main ul, li{
+}
+main h2,
+main h3 {
+  font-family: "DM Serif Display", serif;
+}
+main ul,
+li {
   font-family: "DM Sans", sans-serif;
   color: black;
- }
- main div img{
+}
+main div img {
   height: 200px;
-  width: 300px;
+  width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
-.recetas{
+.recetas {
   background-color: white;
- padding: 20px;
- border-radius: 6px;
+  padding: 20px;
+  border-radius: 6px;
 }
 
-#main{
+#main {
   margin: 0 auto;
   max-width: 1239px;
   display: grid;
- grid-gap: 10px;
- grid-template-columns: 1fr 1fr 1fr;
- grid-template-rows:fit-content fit-content ;
- align-content: center;
- grid-template-areas:
- "receta-1 receta-2 receta-3"
- "receta-4 receta-5 receta-6"
- ;
-
-
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  align-content: center;
+  grid-template-areas:
+    "receta-1 receta-2 receta-3"
+    "receta-4 receta-5 receta-6";
 }
 
-img
-#receta-1{
+img #receta-1 {
   grid-area: receta-1;
 }
-#receta-2{
+#receta-2 {
   grid-area: receta-2;
 }
-#receta-3{
+#receta-3 {
   grid-area: receta-3;
 }
-#receta-4{
+#receta-4 {
   grid-area: receta-4;
 }
-#receta-5{
+#receta-5 {
   grid-area: receta-5;
 }
-#receta-6{
+#receta-6 {
   grid-area: receta-6;
 }
 
@@ -119,11 +113,11 @@ img
   justify-content: space-between;
   margin: 20px;
 }
-#Bitcook-2{
+#Bitcook-2 {
   font-family: "DM Serif Display", serif;
 }
-.año{
-font-family:"DM Sans", sans-serif ;
+.año {
+  font-family: "DM Sans", sans-serif;
 }
 
 /* #main{
@@ -134,40 +128,45 @@ font-family:"DM Sans", sans-serif ;
   margin-bottom: 0px;
   flex-flow: column;
 } */
-body{
-  background-color: #EFE2C2 ;
+body {
+  background-color: #efe2c2;
 }
-@media (max-width:768px){
-.container{
+@media (max-width: 768px) {
+  #main {
     display: grid;
-    grid-template-rows: fit-content fit-content fit-content;
+    grid-template-rows:auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "receta-1 receta-2"
-    "receta-3 receta-4"
-    "receta-5 receta-6";
-}
+    grid-template-areas:
+      "receta-1 receta-2"
+      "receta-3 receta-4"
+      "receta-5 receta-6";
+  }
 
-
-
-#receta-1{
-  grid-area: receta-1;
+  #receta-1 {
+    grid-area: receta-1;
+  }
+  #receta-2 {
+    grid-area: receta-2;
+  }
+  #receta-3 {
+    grid-area: receta-3;
+  }
+  #receta-4 {
+    grid-area: receta-4;
+  }
+  #receta-5 {
+    grid-area: receta-5;
+  }
+  #receta-6 {
+    grid-area: receta-6;
+  }
 }
-#receta-2{
-  grid-area: receta-2;
-}
-#receta-3{
-  grid-area: receta-3;
-}
-#receta-4{
-  grid-area: receta-4;
-}
-#receta-5{
-  grid-area: receta-5;
-}
-#receta-6{
-  grid-area: receta-6;
-
-}
-
+@media (max-width: 560px){
+    #main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 1239px;
+        gap: 20px;
+    }
 }
