@@ -59,7 +59,8 @@
 }
 .recetas{
   background-color: white;
- 
+ padding: 20px;
+ border-radius: 6px;
 }
 
 #main{
@@ -136,22 +137,19 @@ font-family:"DM Sans", sans-serif ;
 body{
   background-color: #EFE2C2 ;
 }
-@media(max-width:768px){
-  main {
-    
-        display: grid;
-margin: 0 auto;
-max-width: 1239px;
-grid-template-columns: 1fr 1fr ;
-grid-template-rows:  440px 440px 440px;
-grid-template-areas: 
-
-"receta-1 receta-2"
-"receta-3 receta-4"
-"receta-5 receta-6";
-gap: 20px;
-    }
+@media (max-width:768px){
+.container{
+    display: grid;
+    grid-template-rows: fit-content fit-content fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "receta-1 receta-2"
+    "receta-3 receta-4"
+    "receta-5 receta-6";
 }
+
+
+
 #receta-1{
   grid-area: receta-1;
 }
@@ -172,3 +170,4 @@ gap: 20px;
 
 }
 
+}

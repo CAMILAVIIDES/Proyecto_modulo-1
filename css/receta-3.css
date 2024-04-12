@@ -8,7 +8,9 @@
   }
   
 }
-
+body{
+    background-color: #F3E5D8;
+}
 #header {
     justify-content: space-between;
     display: flex;
@@ -18,6 +20,7 @@
     border-radius: 6px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 40px;
 }
 
 #BitCook {
@@ -25,13 +28,37 @@
     font-family: "DM Serif Display", serif;
   }
   a{
-    color: white;
+  
     text-decoration: none;
     font-family:  "DM Sans", sans-serif;
    
     
   }
+  main {
+    background-color: white;
+    width: 100%;
+    border-radius: 6px;
+    padding: 20px;
+    height: fit-content;
+  }
+  #bloque-2{
+  
+    width: 100%;
+    border-radius: 6px;
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  #bloques{
+    background-color: white;
+    padding: 20px;
+  }
 
+  #preparationtime{
+    background-color:#FFF7FC ;
+  }
   .content{
     color: #7E4333;
     font-family: "DM Serif Display", serif;
@@ -50,11 +77,23 @@
     margin: 2 auto;
     font-family:"DM Sans", sans-serif ;
   }
-  .container
-  {
+  .container{
     display: grid;
-   grid-template-columns: 1fr 1fr;
-   
+   grid-template-columns: 2fr 1fr;
+   grid-template-areas:
+   "bloque-1 bloque-2" ;
+   gap: 20px;
+   max-width: 1240px;
+   margin: 0 auto;
+  }
+  #bloque-1{
+    grid-area: bloque-1 ;
+  }
+  #bloque-2{
+    grid-area:bloque-2 ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 .item-imagen{
   background-image: url(../imagenes/imagen-proyecto.png);
@@ -70,23 +109,29 @@
   object-fit: contain;
 }
 li{
-  font-family:"DM Sans", sans-serif  ; ;
+  font-family:"DM Sans", sans-serif  ; 
 }
 
-.tabla{
+.tabla {
  justify-content: space-between;
  padding: 20px 25px;
  font-family:"DM Sans", sans-serif  ;
  width: 100%;
   border: 1px #7E4333;
+  
+}
+.tabla  th {
+    border-bottom: 1px solid #7E4333;
 }
 #macros{
-font-family: "DM Sans", sans-serif ;
-font: 1em sans-serif;
+    font-family: "DM Sans", sans-serif ;
+    text-decoration: none;
+    font: 1em sans-serif;
 }
+
 #Morerecipes{
   color: #7E4333;
-
+   
 }
 
 .contenedor {
@@ -99,6 +144,20 @@ font: 1em sans-serif;
   
 }
 
+#morerecipes{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+#morerecipes a img{
+width:80px ;
+height: 80px;
+}
+#morerecipes a{
+    display: flex;
+   margin-bottom: 20px;
+}
 
 #footer {
   justify-content: center;
@@ -119,6 +178,7 @@ font: 1em sans-serif;
   align-self: center;
   margin: 10px ;
   justify-content: space-between;
+  margin-top: 60px;
 }
 #Bitcook-2{
   font-family: "DM Serif Display", serif;
